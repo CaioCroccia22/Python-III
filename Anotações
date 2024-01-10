@@ -1,0 +1,13 @@
+O que é a Programação Orientada a Objeto?
+
+- Nova maneira de pensar no desenvolvimento, 
+utilizando conceitos do mundo real
+
+- Se unio as boas praticas da engenharia de software, como a modelagem de sistemas. Com o objetivo principal de padronizar o desenvolvimento de software
+
+- Os objetos do mundo real transformam-se em objetos no softwares, ex: locadora de carros, para se construir um software sobre isso é necessário entender todas as regras do negocio. Importante ter a regra de negocio muito bem definida
+
+- Torna mais fácil a manutenção ao sistema
+
+- Uma classe possui atributos (caracteristicas)
+e metodos (comportamentos)
