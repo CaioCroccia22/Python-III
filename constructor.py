@@ -1,7 +1,7 @@
 #Metodo para configuração inicial da classe#
 #Metodo construtor#
 #Os atributos são passados todos no metodo construtor#
-
+#inicializar#
 class Movie:
     def __init__(self, name, yearLaunch, includedPlan, note, durationMinutes):
         self.name = name
@@ -23,3 +23,5 @@ print(Movie.name)
 
 print(Movie)#Antes do metodo str >> <__main__.Movie object at 0x000001EEB771A1E0>
 print(Movie2)
+
+

@@ -1,3 +1,7 @@
+
+
+#Criando uma classe#
+#Primeiro Filme#
 class Movie:
     name = ""
     yearLaunch = 0
@@ -5,13 +9,17 @@ class Movie:
     note = 0
     durationMinutes = 0
 
-#Instanciando o objeto a partir de uma classe#
-#Primeiro Filme#
+#Referenciando a classe fora dela#
 movie = Movie()
 print(movie)
+
+#Instanciando o objeto a partir de uma classe#
 #Cria um objeto na classe movie#
 movie.name = "Super Mario"
 movie.yearLaunch = 2010
 movie.includedPlan = False
 movie.note = 5.0
 print(f"Nome do filme: {movie.name}")
+
+
+
