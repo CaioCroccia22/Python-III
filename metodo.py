@@ -12,3 +12,9 @@ class Movie:
     def techinal_sheet(self):
         print("#Dados do filme")
         print(f"Nome do filme: {self.name}")
+        print(f"Avaliação do filme: {self.note}")
+
+mario = Movie("Super Mario", 2023, False 
+              , 5, 100)
+
+mario.techinal_sheet()
