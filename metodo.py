@@ -8,3 +8,7 @@ class Movie:
     
     def __str__(self):
         return f"Filme: {self.name}"
+    
+    def techinal_sheet(self):
+        print("#Dados do filme")
+        print(f"Nome do filme: {self.name}")
