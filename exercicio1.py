@@ -21,12 +21,18 @@ class Movie():
         
     
     
-    def getRate(self, rate):
-        print(rate)
+    def getRate(self, amountEvaluators):
+        i = 0
+        totalRate = 0
+        while i <= amountEvaluators:
+            rate = int(input("Digite a nota do filme:\n"))
+            i += 1
+            totalRate = rate + totalRate
+        print(totalRate / amountEvaluators)
 
 
 mario = Movie("Mario Bros")
-rate = input("Digite a nota do filme:")
 
-mario.getRate(rate)
+amountEvaluators= int(input("Diga quantos avaliadores terão:\n"))
+mario.getRate(amountEvaluators)
     
