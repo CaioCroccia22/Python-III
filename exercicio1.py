@@ -18,14 +18,15 @@ nota com parametro e que essa nota seja salva no atributo especifico da classe
 class Movie():
     def __init__(self, name):
         self.name = name
+        
     
     
-    def getRate(self):
-        note = input("Digite a nota do filme:")
-        print(note)
-
+    def getRate(self, rate):
+        print(rate)
 
 
 mario = Movie("Mario Bros")
-mario.getRate()
+rate = input("Digite a nota do filme:")
+
+mario.getRate(rate)
     
