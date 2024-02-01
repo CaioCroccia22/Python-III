@@ -11,8 +11,8 @@ class product:
         print(f"O valor do produto é {self.value}")
         
     def sale(self, discount):
-        percentage = discount/100
-        price = percentage*self.value
+        percentage = self.value/100
+        price = percentage*discount
         totalPrice = self.value - price
         print(f"O preço do produto é {totalPrice}")
 
