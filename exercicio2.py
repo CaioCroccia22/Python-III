@@ -13,5 +13,11 @@ class product:
     def sale(self, discount):
         percentage = discount/100
         price = percentage*self.value
-        print(f"O preço do produto é {price}")
+        totalPrice = self.value - price
+        print(f"O preço do produto é {totalPrice}")
 
+bottle = product("garrafa", 10)
+rice = product("Arroz", 40)
+
+bottle.sale(10)
+rice.sale(10)
