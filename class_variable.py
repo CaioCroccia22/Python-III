@@ -19,7 +19,10 @@ class Movie:
 
 mario = Movie("Super Mario", 2023, False 
               , 5, 100)
+avatar = Movie("Avatar", 2023, False 
+              , 5, 100)
 
 mario.techinal_sheet()
 #Modificando a variavel de classe#
 Movie.plataform = "Amazon"
+avatar.techinal_sheet()
