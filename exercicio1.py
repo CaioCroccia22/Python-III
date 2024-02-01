@@ -28,7 +28,7 @@ class Movie():
             rate = int(input("Digite a nota do filme:\n"))
             i += 1
             totalRate = rate + totalRate
-        print(totalRate / amountEvaluators)
+        print(f"A nota total do filme é {totalRate / amountEvaluators}")
 
 
 mario = Movie("Mario Bros")
