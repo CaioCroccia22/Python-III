@@ -18,9 +18,12 @@ class Employee:
     def set_salary(self, salary):
         self.__salary = salary
 
-fulano = Employee("Fulano", 5000)
-sicrano = Employee("Sicre", 5000)
+fulano = Employee("Fulano", 5.000)
+sicrano = Employee("Sicre", 5.000)
 fulano.name = "Caio Croccia"
+fulano.show()
+
+fulano.set_salary(10.000)
 fulano.show()
 
 
