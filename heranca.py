@@ -6,7 +6,7 @@ class Animal:
 
 
     def eat(self):
-        print("Animal se alimentando")
+        print(f"Animal {self.name} se alimentando")
 
 # Classe especializada
 class Horse(Animal):
@@ -20,10 +20,17 @@ class Lion(Animal):
     mane = True
 
     def hunt(self):
-        print("Leão caçando")
+        print(f"Leão {self.name} está caçando")
 
 h = Horse()
 # O atributo name não foi colocado na classe Horse, porem foi na classe Animal
 h.name = "Pé de Pano"
 h.race = "Branco"
 h.escape()
+h.eat()
+
+l = Lion()
+l.name = "Simba"
+l.hunt()
+l.eat()
+
