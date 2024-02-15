@@ -11,3 +11,19 @@ utilizando conceitos do mundo real
 
 - Uma classe possui atributos (caracteristicas)
 e metodos (comportamentos)
+
+
+O que é Herança?
+
+Possibilita que uma classe (filha) possa herdar atributos e metodos de outra classe (pai)
+ex: Classe pai - titulo
+Classe filha - serie e filme
+
+Classe generica(pai) - atributos genericos x Classe Especialista
+
+Em python para herdar uma classe é só utilizar o seu nome entre parêntesis
+
+
+
+
+
