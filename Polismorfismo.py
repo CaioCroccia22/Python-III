@@ -35,3 +35,5 @@ Iphone.make_a_call(139981447473)
 print(f"Valor do iphone {Iphone._brand} {Iphone._model_name} {Iphone._price}")
 print(vars(Iphone))
 
+
+
