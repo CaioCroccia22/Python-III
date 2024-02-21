@@ -25,3 +25,18 @@ def my_decorator(func):
         func()
         print("Depois de executar a função")
     return wrapper
+
+
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+
+def split_string(function):
+    def wrapper():
+        func = function()
+        split_string = func.split()
+        return split_string
+    return wrapper
