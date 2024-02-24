@@ -33,8 +33,23 @@ class ContactBook:
         for name, phone in self.number_dict.items():
             print(f"{name} -- {phone}")
         
+    def deleteContact(self, name):
+        if name in self.number_dict.items():
+            del self.number_dict[name]
+            print(f"O contato {name} foi removido com sucesso!")
+
+    def getContact(self, name):
+        if name in self.number_dict.items():
+            print(f"{name} -- {name.keys()}")
+
+
+
 
 contact_book = ContactBook()
-Caio = Contact("Trabalho", "2233", "dds@dsd")
+Caio = Contact("Caio", "2233", "dds@dsd")
+Trabalho = Contact("Trabalho", "2233", "dds@dsd")
+Faculdade = Contact("Faculdade", "223232", "wqewed@wewew")
+contact_book.addContact(Caio)
+contact_book.addContact(Caio)
 contact_book.addContact(Caio)
 contact_book.listContact()
