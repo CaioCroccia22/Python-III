@@ -4,37 +4,24 @@ class ContactBook:
         self.number_dict = {}
 
     def addContact(self, contac):
-        self.number_dict[contac.name] = contac.phone
+        self.number_dict[contac.name] = contac.phone, contac.Email
 
     def listContact(self):
         if not self.number_dict:
             print("Lista de contato vazia")
         else:
-            for name, phone in self.number_dict.items():
-                print(f"{name} -- {phone}")
+            for contact in self.number_dict:
+                print(contact)
         
-    def deleteContact(self, name):
-        if name in self.number_dict:
-            del self.number_dict[name]
-            print(f"O contato {name} foi removido com sucesso!")
+    def deleteContact(self, contact):
+        if contact in self.number_dict:
+            del self.number_dict[contact]
+            
 
-    def getContact(self, name):
-        if name in self.number_dict:
-            print(f"{name} -- {self.number_dict[name]}")
+    def getContact(self, contact):
+        if contact in self.number_dict:
+            print(f"{self.number_dict[contact]}")
+            return contact
 
 
 
-
-contact_book = ContactBook()
-Caio = Contact("Caio", "2233", "dds@dsd")
-Trabalho = Contact("Trabalho", "2233", "dds@dsd")
-Faculdade = Contact("Faculdade", "223232", "wqewed@wewew")
-contact_book.addContact(Caio)
-contact_book.addContact(Trabalho)
-contact_book.addContact(Faculdade)
-contact_book.listContact()
-
-contact_book.deleteContact("Caio")
-contact_book.listContact
-
-contact_book.getContact("Faculdade")
